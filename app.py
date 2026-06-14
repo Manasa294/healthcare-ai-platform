@@ -339,7 +339,7 @@ def predict_appointment(id):
 
     probability = (
         model.predict_proba(data)[0][1]
-    )s
+    )
     if probability > 0.70:
         send_reminder(
         patient
