@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Schedule Appointment</title>
+</head>
+
+<body>
+
+<h1>Schedule Appointment</h1>
+
+<form
+action="/schedule_appointment"
+method="POST">
+
+    <label>
+        Patient ID
+    </label>
+
+    <br>
+
+    <input
+    type="number"
+    name="patient_id"
+    required>
+
+    <br><br>
+
+    <label>
+        Doctor ID
+    </label>
+
+    <br>
+
+    <input
+    type="number"
+    name="doctor_id"
+    required>
+
+    <br><br>
+
+    <label>
+        Appointment Date
+    </label>
+
+    <br>
+
+    <input
+    type="date"
+    name="appointment_date"
+    required>
+
+    <br><br>
+
+    <button type="submit">
+        Schedule
+    </button>
+
+</form>
+
+</body>
+</html>
