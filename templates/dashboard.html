@@ -1,57 +1,26 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html' %}
 
-<head>
+{% block content %}
 
-<title>
-Healthcare Dashboard
-</title>
+<h1>Healthcare Analytics Dashboard</h1>
 
-<style>
+<div class="cards">
 
-body{
-font-family:Arial;
-margin:40px;
-}
+    <div class="card">
+        <h3>Total Patients</h3>
+        <h2>1250</h2>
+    </div>
 
-.card{
-border:1px solid #ddd;
-padding:20px;
-margin:10px;
-width:200px;
-display:inline-block;
-}
+    <div class="card">
+        <h3>No Show Rate</h3>
+        <h2>18%</h2>
+    </div>
 
-</style>
+    <div class="card">
+        <h3>High Risk</h3>
+        <h2>234</h2>
+    </div>
 
-</head>
-
-<body>
-
-<h1>
-Healthcare Dashboard
-</h1>
-
-<div class="card">
-Patients
-<h2>{{patients}}</h2>
 </div>
 
-<div class="card">
-Doctors
-<h2>{{doctors}}</h2>
-</div>
-
-<div class="card">
-Appointments
-<h2>{{appointments}}</h2>
-</div>
-
-<div class="card">
-Predictions
-<h2>{{predictions}}</h2>
-</div>
-
-</body>
-
-</html>
+{% endblock %}
