@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare AI Platform</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>🏥 Healthcare AI</h2>
+
+    <a href="/">Dashboard</a>
+
+    <a href="/patients">Patients</a>
+
+    <a href="/prediction">Prediction</a>
+
+    <a href="/forecast">Forecast</a>
+
+</div>
+
+<div class="content">
+    {% block content %}
+    {% endblock %}
+</div>
+
+</body>
+</html>
